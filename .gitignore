@@ -1,0 +1,38 @@
+# Environment
+.env
+.venv
+venv/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Data (large files)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# ML model artifacts
+app/ml/*.pkl
+app/ml/*.joblib
+app/ml/*.pt
+app/ml/*.bin
+!app/ml/.gitkeep
+
+# Notebooks
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# ChromaDB vector store
+chroma_db/

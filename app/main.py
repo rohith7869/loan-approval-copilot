@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+
 from app.api.routes import health, predict, rag
 
 app = FastAPI(
@@ -16,4 +17,5 @@ app.include_router(rag.router, prefix="/rag", tags=["Borrower Copilot"])
 def start():
     """Entry point for poetry run start"""
     import uvicorn
+
     uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)

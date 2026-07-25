@@ -26,7 +26,7 @@ class PreviousApplication(Base):
     DAYS_DECISION = Column(Integer)
     NAME_PAYMENT_TYPE = Column(String)
     CODE_REJECT_REASON = Column(String)
-    NAME_TYPE_SUITE = Column(Float)
+    NAME_TYPE_SUITE = Column(String)
     NAME_CLIENT_TYPE = Column(String)
     NAME_GOODS_CATEGORY = Column(String)
     NAME_PORTFOLIO = Column(String)

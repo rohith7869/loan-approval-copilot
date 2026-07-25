@@ -33,9 +33,10 @@ package-mode = false
 packages = [{include = "app"}]
 
 [tool.poetry.scripts]
-start = "app.main:start"
-train = "scripts.train:main"
+start  = "app.main:start"
+train  = "scripts.train:main"
 ingest = "scripts.rag_ingest:main"
+load   = "scripts.load_data:main"
 [dependency-groups]
 dev = [
     "pre-commit (>=4.6.1,<5.0.0)",

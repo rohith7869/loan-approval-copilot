@@ -304,7 +304,7 @@ def upgrade() -> None:
         sa.Column("DAYS_DECISION", sa.Integer(), nullable=True),
         sa.Column("NAME_PAYMENT_TYPE", sa.String(), nullable=True),
         sa.Column("CODE_REJECT_REASON", sa.String(), nullable=True),
-        sa.Column("NAME_TYPE_SUITE", sa.Float(), nullable=True),
+        sa.Column("NAME_TYPE_SUITE", sa.String(), nullable=True),
         sa.Column("NAME_CLIENT_TYPE", sa.String(), nullable=True),
         sa.Column("NAME_GOODS_CATEGORY", sa.String(), nullable=True),
         sa.Column("NAME_PORTFOLIO", sa.String(), nullable=True),
